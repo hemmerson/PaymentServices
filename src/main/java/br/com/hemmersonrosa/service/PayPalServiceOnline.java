@@ -1,14 +1,14 @@
 package br.com.hemmersonrosa.service;
 
-public class PayPalService implements PaymentService{
+public class PayPalServiceOnline implements OnlinePaymentService {
 
     @Override
     public double paymentFee(double amount) {
-        return amount * 0.01;
+        return amount * 0.02;
     }
 
     @Override
     public double interest(double amount, int months) {
-        return (amount * 0.02) * months ;
+        return (amount * 0.01) * months ;
     }
 }

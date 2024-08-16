@@ -1,6 +1,6 @@
 package br.com.hemmersonrosa.service;
 
-public interface PaymentService {
-    public double paymentFee(double amount);
-    public double interest(double amount, int months);
+public interface OnlinePaymentService {
+    double paymentFee(double amount);
+    double interest(double amount, int months);
 }
